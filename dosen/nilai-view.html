@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <link rel="icon" href="../assets/icon.png" />
+   <link rel="stylesheet" href="/assets/css/transaction.css" />
+   <!-- Boxicons CDN Link -->
+   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Nilai</title>
+</head>
+   <body>
+	<div class="sidebar">
+	   <div class="logo-details">
+		<i class="bx bx-buildings"></i>
+		<span class="logo_name">UIN MALANG</span>
+	   </div>
+	   <ul class="nav-links">
+		<li>
+		   <a href="dasboard-dsn.html">
+		      <i class="bx bx-grid-alt"></i>
+			<span class="links_name">Dashboard</span>
+		   </a>
+		</li>
+		<li>
+		   <a href="lihat-jadwal-dsn.html">
+			<i class="bx bx-box"></i>
+			<span class="links_name">Lihat Jadwal</span>
+		   </a>
+		</li>
+		<li>
+		   <a href="masuk-nilai.html"  class="active">
+			<i class="bx bx-list-ul"></i>
+			<span class="links_name">Masukkan Nilai</span>
+	         </a>
+		</li>
+		<li>
+		   <a href="#">
+			<i class="bx bx-log-out"></i>
+			<span class="links_name">Log out</span>
+		   </a>
+		</li>
+	   </ul>
+	</div>
+	<section class="home-section">
+	   <nav>
+		<div class="sidebar-button">
+		   <i class="bx bx-menu sidebarBtn"></i>
+		</div>
+		<div class="profile-details">
+			<i class="bx bx-user-circle"></i>
+		   <span class="admin_name">Dosen</span>
+		</div>
+	   </nav>
+	   <div class="home-content">
+		<h3>Transkrip Nilai</h3>
+			<button type="button" class="btn btn-tambah"><a href="masuk-nilai.html">Tambah Data</a></button>
+			
+			<div class="card">
+				<table class="table-data">
+					<thead>
+						<tr>
+						<th style="width: 20%">NIM</th>
+						<th>Nama</th>
+						<th style="width: 20%">Mata Kuliah</th>
+						<th>Kelas</th>
+						<th>Nilai</th>
+						<th>Huruf</th>
+						<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<td>Sosmed A</td>
+						<td>Social Media Marketing</td>
+						<td>450000</td>
+						<td>02-03-2023</td>
+						<td></td>
+						<td></td>
+						<td><a href="">Edit</a> | <a href="">Hapus</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	   </div>
+	</section>
+   <script>
+	let sidebar = document.querySelector(".sidebar");
+	let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function () {
+		 sidebar.classList.toggle("active");
+		  if (sidebar.classList.contains("active")) {
+					sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+		  } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+			};
+   </script>
+</body>
+</html>
